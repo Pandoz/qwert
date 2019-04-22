@@ -11,31 +11,31 @@ bool check(double x, double y)//Проверка
 	}
 	return 0;
 }
-void pluss(Complex Z, Complex X)//Операция сложения
+void pluss(Complex N1, Complex N2)//Операция сложения
 {
 	Complex rez;
-	rez.re = Z.re + X.re;
-	rez.im = Z.im + X.im;
+	rez.re = N1.re + N2.re;
+	rez.im = N1.im + N2.im;
 	cout << rez.re << " + (" << rez.im << ")i\n";
 }
-void substruct(Complex Z, Complex X)//Операция вычетания
+void substruct(Complex N1, Complex N2)//Операция вычетания
 {
 	Complex rez;
-	rez.re = Z.re - X.re;
-	rez.im = Z.im - X.im;
+	rez.re = N1.re - N2.re;
+	rez.im = N1.im - N2.im;
 	cout << rez.re << " + (" << rez.im << ")i\n";
 }
-void multiplication(Complex Z, Complex X)//Операция умножения
+void multiplication(Complex N1, Complex N2)//Операция умножения
 {
 	Complex rez;
-	rez.re = Z.re * X.re - Z.im * X.im;
-	rez.im = Z.re * X.im - Z.im * X.re;
+	rez.re = N1.re * N2.re - N1.im * N2.im;
+	rez.im = N1.re * N2.im - N1.im * N2.re;
 	cout << rez.re << " + (" << rez.im << ")i\n";
 }
-void devide(Complex Z, Complex X)//Операция деления
+void devide(Complex N1, Complex N1)//Операция деления
 {
 	Complex rez;
-	rez.re = (Z.re * X.re + Z.im * X.im) / (Z.re * X.re + X.im * X.im);
-	rez.im = (X.re * Z.im - Z.re * X.im) / (X.re * X.re + X.im * X.im);
+	rez.re = (N1.re * N2.re + N1.im * N2.im) / (N1.re * N2.re + N2.im * N2.im);
+	rez.im = (N1.re * N2.im - N2.re * N1.im) / (N2.re * N2.re + N2.im * N2.im);
 	cout << rez.re << " + (" << rez.im << ")i\n";
 }
