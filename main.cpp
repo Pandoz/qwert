@@ -5,43 +5,43 @@ using namespace std;
 int main()
 {
 	system("chcp 1251");
-	double x1, x2, y1, y2;
+	double a, b, c, d;
 	char v;
 	cout << "Число должно принимать значения данного диапазона[-1000; 1000]\n";
 	cout << "Введите два значения первого комплексного числа(re, im):\n";
 	bool bCheck{ true };
 	while (bCheck)
 	{
-		cin >> x1;
-		cin >> y1;
-		bCheck = check(x1, y1);
+		cin >> a;
+		cin >> b;
+		bCheck = check(a, b);
 	}
 
 cout << "Введите два значения второго комплексного числа(re, im):\n";
 	bCheck = true;
 	while (bCheck)
 	{
-		cin >> x2;
-		cin >> y2;
-		bCheck = check(x2, y2);
+		cin >> c;
+		cin >> d;
+		bCheck = check(c, d);
 	}
-	Complex Z = { x1, y1 }
-	Complex X = { x2, y2 };
+	Complex N1 = { a, b }
+	Complex N2 = { c, d };
 	cout << "Выберите операция:\n";
 	cin >> v;
 	switch (v)// Выбор операции
 	{
 	case '+':
-		pluss(Z, X);
+		pluss(N1, N2);
 		break;
 	case '-':
-		substruct(Z, X);
+		substruct(N1, N2);
 		break;
 	case '*':
-		multiplication(Z, X);
+		multiplication(N1, N2);
 		break;
 	case '/':
-		devide(Z, X);
+		devide(N1, N2);
 		break;
 	default:
 		cout << "Данной операции не существует\n Вычисления не возможны";
