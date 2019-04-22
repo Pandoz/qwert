@@ -7,10 +7,10 @@ struct Complex
 	double im;
 };
 bool check(double x, double y);
-void pluss(Complex Z, Complex X);
-void substruct(Complex Z, Complex X);
-void multiplication(Complex Z, Complex X);
-void devide(Complex Z, Complex X);
+void pluss(Complex N1, Complex N2);
+void substruct(Complex N1, Complex N2);
+void multiplication(Complex N1, Complex N2);
+void devide(Complex N1, Complex N2);
 
 #endif
 
