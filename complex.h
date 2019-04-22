@@ -1,5 +1,6 @@
 #ifndef Complex_h
 #define Complex_h
+
 struct Complex
 {
 	double re;
@@ -10,4 +11,6 @@ void pluss(Complex Z, Complex X);
 void substruct(Complex Z, Complex X);
 void multiplication(Complex Z, Complex X);
 void devide(Complex Z, Complex X);
+
 #endif
+
