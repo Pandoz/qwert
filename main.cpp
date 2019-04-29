@@ -54,7 +54,7 @@ cout << "Введите два значения второго комплекс�
 	int k, k1;
 	int MAX = -1;
 	Complex pm;
-	Complex* p = new Complex[n];
+	Complex *p = new Complex[n];
 	for (i = 0; i < n; i++)
 	{
 		F >> k;
